@@ -5,7 +5,7 @@
   //import { html, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
  // render(html`<a href="/">Hello!</a>`, document.body);
   let sx = t => document.createElementNS("http://www.w3.org/2000/svg", t);
-  let oO = o || {};
+  let oO = o => o || {};
   let K = o => Object.keys(oO(o));
   let U = undefined;
   let x = (t, p, a) => {
@@ -19,7 +19,7 @@
   x("svg", U, {width: 100, height: 100});
   x("circle", s,
   {width: 50, height: 50});
-  document.appendChild(s);
+  document.body.appendChild(s);
 
 </script></head>
   <body>
