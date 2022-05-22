@@ -7,7 +7,14 @@
   let sx = t => document.createElementNS("http://www.w3.org/2000/svg", t);
   let oO = o || {};
   let K = o => Object.keys(oO(o));
-  
+  let U = undefined;
+  let x = (t, p, a) => {
+    let e = sx(t);
+    if (p) p.appendChild(e);
+    K(a).forEach(k => e.setAttribute(k, a[k]));
+  }
+  x("svg", U, {width: 100, height: 100});
+
 </script></head>
   <body>
 
